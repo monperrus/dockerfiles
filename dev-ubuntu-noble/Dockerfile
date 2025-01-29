@@ -1,6 +1,9 @@
 FROM ubuntu:noble
 RUN apt update
 #RUN apt upgrade
+# low level
+# for gpus and ollamas
+RUN apt-install -y lshw 
 RUN apt install -y git
 RUN apt install -y python3 python3-pip
 RUN apt install -y python3-virtualenv
