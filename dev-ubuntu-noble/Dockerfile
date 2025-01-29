@@ -19,7 +19,7 @@ RUN usermod -u 1001 ubuntu
 RUN usermod -aG sudo ubuntu
 RUN echo 'ubuntu ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers.d/ubuntu
 RUN chmod 0440 /etc/sudoers.d/ubuntu
-
+ENV LANG C.UTF-8
 USER ubuntu
 WORKDIR /home/ubuntu
 
