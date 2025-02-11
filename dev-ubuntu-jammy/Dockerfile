@@ -3,7 +3,7 @@ RUN apt update
 #RUN apt upgrade
 # low level
 # for gpus and ollamas
-RUN apt install -y lshw libleveldb-dev libffi-dev libssl-dev pkg-config software-properties-common
+RUN apt install -y lshw libleveldb-dev libffi-dev libssl-dev pkg-config software-properties-common libc-bin file
 RUN apt install -y sudo git vim tmux wget curl
 
 # minimum python
